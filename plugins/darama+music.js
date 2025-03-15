@@ -43,7 +43,7 @@ let desc = `
 🎧 *ENJOY THE MUSIC BROUGHT TO YOU!*
 
 
-> *© Powered by your botname* 
+> *© Powered by CORNEH MD* 
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -95,7 +95,7 @@ let desc = `
 🎬 *ENJOY THE VIDEO BROUGHT TO YOU!*
 
 
-> *© powered by your botname*
+> *© powered by CORNEH MD*
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -107,7 +107,7 @@ let downloadUrl = down.dl_url
 
 //send video message
 await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*© Powered by your Botname*"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*© Powered by CORNEH MD*"},{quoted:mek})
 
 }catch(e){
 console.log(e)
