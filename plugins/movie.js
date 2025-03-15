@@ -27,7 +27,7 @@ cmd({
         }
 
         const movieInfo = `
-*🎬 Botname MOVIE SERCH🎬*
+*🎬 Corneh Md MOVIE SERCH🎬*
 
 *ᴛɪᴛʟᴇ:* ${data.Title}
 *ʏᴇᴀʀ:* ${data.Year}
@@ -43,14 +43,14 @@ cmd({
 *ᴀᴡᴀʀᴅꜱ:* ${data.Awards}
 *ɪᴍᴅʙ ʀᴀᴛɪɴɢ:* ${data.imdbRating}
 
-> *powered by ur botname👑*
+> *powered by corneh md👑*
 `;
 
         const imageUrl = data.Poster && data.Poster !== 'N/A' ? data.Poster : config.ALIVE_IMG;
 
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> CREATED BY your  name`
+            caption: `${movieInfo}\n> CREATED BY corneh tech`
         }, { quoted: mek });
     } catch (e) {
         console.error(e);
